@@ -1,0 +1,142 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    line-height: 1.6;
+}
+
+
+.posting{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    
+}
+#postBtn{
+    margin-right: 1rem;
+    padding: .7rem;
+    width: 90px;
+    outline: none;
+    border-radius: 7px;
+    border: .7px solid #eee;
+    background: transparent;
+    color: #fff;
+}
+.post{
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 20px rgba(242, 240, 240, 0.114);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#commentPara{
+    color: #fff;
+    font-size: 1rem;
+}
+
+textarea{
+    background-color: transparent;
+    border: .3px solid #000;
+    outline: none;
+    border-radius: 5px;
+}
+#posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+#postBtn:hover{
+    background-color: #000;
+    transition: all .6s;
+    border: none;
+    cursor: pointer;
+}
+
+
+#input{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 1rem;
+    padding: .7rem;
+    width: 300px;
+    outline: none;
+    border-radius: 7px;
+    border: .7px solid #eee;
+    background: transparent;
+}
+header {
+    
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+#c-d{
+    
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.comments-container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.c-b{
+    margin-left: .5rem;
+    padding: .7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
+    border: none;
+    background: #f9a54a;
+    color: #fff;
+}
+
+.c-b:hover{
+    background-color: #333;
+    transition: all .6s;
+    cursor: pointer;
+}
+main {
+    padding: 2rem;
+}
+h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
